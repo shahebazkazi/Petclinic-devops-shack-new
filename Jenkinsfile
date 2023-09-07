@@ -17,7 +17,7 @@ pipeline {
         
          stage('Deploy') {
             steps {
-                sh " sudo -u root cp target/petclinic.war /opt/apache-tomcat-9.0.65/webapps/ " 
+                sh " sudo -S -u root cp target/petclinic.war /opt/apache-tomcat-9.0.65/webapps/ " 
 
             }
         }
